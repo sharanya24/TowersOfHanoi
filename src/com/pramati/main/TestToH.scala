@@ -5,8 +5,7 @@ object TestToH {
   def main(a: Array[String]) {
     val obj = new TowerOfhanoi();
     if (validateInput) {
-      var result = obj.moveDisks(nDisks.asInstanceOf[Int], "Rod A", "Rod B", "Rod C");
-      println("Steps to move disks from Rod A to Rod C using Rod B\n" + result);
+      obj.moveDisks(nDisks.asInstanceOf[Int], "Rod A", "Rod B", "Rod C");
     }
   }
   def validateInput: Boolean = {
