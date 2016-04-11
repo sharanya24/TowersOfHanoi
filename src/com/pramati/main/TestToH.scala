@@ -9,10 +9,10 @@ object TestToH {
     }
   }
   def validateInput: Boolean = {
-    print("Enter the number of disks to swap:\t");
+    print("Enter the number of disks to move:\t");
     val sc = new java.util.Scanner(System.in)
     if (!sc.hasNextInt()) {
-      println("Enter only numbers: \t");
+      println("Enter only numbers greater than 0: \t");
       sc.next();
     }
     nDisks = sc.nextInt();
