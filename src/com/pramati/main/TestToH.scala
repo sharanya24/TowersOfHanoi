@@ -9,9 +9,9 @@ object TestToH {
     }
   }
   def validateInput: Boolean = {
-    print("Enter the number of disks to move:\t");
+    print("Enter the number of disks to move:\t")
     val sc = new java.util.Scanner(System.in)
-    if (!sc.hasNextInt()) {
+    if (!sc.hasNextInt()) {  // check whether entered value is of type Integer
       println("Enter only numbers greater than 0: \t");
       sc.next();
     }
