@@ -8,9 +8,9 @@ class TowerOfhanoi {
       println("Move disk from " + src + " to " + des);
     } else {
 
-      var res0: String = moveDisks(nDisk - 1, src, des, temp); //pull top n-1 disk from src to destin
+       moveDisks(nDisk - 1, src, des, temp); //pull top n-1 disk from src to destin
       println("Move disk from " + src + " to " + des);
-      var res1: String = moveDisks(nDisk - 1, temp, src, des); //pull n-1 disk from interim to destin
+       moveDisks(nDisk - 1, temp, src, des); //pull n-1 disk from interim to destin
       
 
     }
